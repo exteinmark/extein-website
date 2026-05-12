@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extein – Soluciones Tecnológicas Integrales para PYMEs | Monterrey, NL</title>
+<meta name="description" content="Extein: +20 años ofreciendo soporte IT, cloud, ciberseguridad y transformación digital para PYMEs en Monterrey, San Pedro y Saltillo. Soporte 24/7. Llama ahora.">
+<meta name="keywords" content="soporte técnico Monterrey, soluciones IT PYMEs, cloud hosting México, ciberseguridad empresarial, transformación digital Monterrey, mantenimiento equipos, redes empresariales, Extein">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Extein">
+<meta name="geo.region" content="MX-NL">
+<meta name="geo.placename" content="Monterrey, Nuevo León, México">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Extein – Soluciones Tecnológicas Integrales para PYMEs | Monterrey">
+<meta property="og:description" content="+20 años de experiencia en IT, cloud, ciberseguridad y transformación digital para PYMEs. Soporte 24/7 en Monterrey, San Pedro y Saltillo.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://extein.com.mx">
+<meta property="og:locale" content="es_MX">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Extein – Soluciones IT para PYMEs en Monterrey">
+<meta name="twitter:description" content="+20 años de experiencia. Soporte IT 24/7, cloud, seguridad y más.">
+
+<link rel="canonical" href="https://extein.com.mx">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Extein",
+  "description": "Soluciones tecnológicas integrales para PYMEs: soporte IT, cloud, ciberseguridad, redes e infraestructura.",
+  "url": "https://extein.com.mx",
+  "telephone": "+52-81-1211-0198",
+  "email": "ventas@extein.com.mx",
+  "address": [
+    {"@type": "PostalAddress", "addressLocality": "Monterrey", "addressRegion": "NL", "addressCountry": "MX"},
+    {"@type": "PostalAddress", "addressLocality": "San Pedro Garza García", "addressRegion": "NL", "addressCountry": "MX"},
+    {"@type": "PostalAddress", "addressLocality": "Saltillo", "addressRegion": "COA", "addressCountry": "MX"}
+  ],
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "areaServed": {"@type": "State", "name": "Nuevo León"},
+  "foundingDate": "2004",
+  "sameAs": []
+}
+</script>
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ===== CSS VARIABLES ===== */
+:root {
+  --blue:    #0211AF;
+  --blue-dk: #010D85;
+  --blue-lt: #1a2fd4;
+  --green:   #38E747;
+  --green-dk:#22c231;
+  --black:   #05060A;
+  --white:   #FFFFFF;
+  --gray:    #6B7280;
+  --gray-lt: #F3F4F6;
+  --gray-bd: #E5E7EB;
+  --text:    #111827;
+
+  --font-head: 'Syne', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-full: 9999px;
+  --shadow: 0 4px 24px rgba(2,17,175,.08);
+  --shadow-lg: 0 12px 40px rgba(2,17,175,.14);
+  --transition: .25s cubic-bezier(.4,0,.2,1);
+}
+
+/* ===== RESET ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+input,textarea,select{font-family:inherit}
+
+/* ===== UTILITIES ===== */
+.container{width:100%;max-width:1200px;margin-inline:auto;padding-inline:1.25rem}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.animate-fadeup{animation:fadeUp .7s ease both}
+.delay-1{animation-delay:.1s}.delay-2{animation-delay:.2s}.delay-3{animation-delay:.3s}.delay-4{animation-delay:.4s}
+
+/* ===== HEADER ===== */
+header{
+  position:sticky;top:0;left:0;right:0;z-index:100;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--gray-bd);
+  transition:box-shadow var(--transition);
+}
+header.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.08)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:70px}
+.logo{display:flex;align-items:center;gap:.6rem;font-family:var(--font-head);font-size:1.5rem;font-weight:800;letter-spacing:-.02em}
+.logo-mark{width:36px;height:36px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:22px;height:22px;fill:var(--white)}
+.logo-text{color:var(--black)}
+.logo-text span{color:var(--blue)}
+
+nav{display:flex;align-items:center;gap:.25rem}
+.nav-link{
+  font-size:.875rem;font-weight:500;color:var(--text);
+  padding:.5rem .75rem;border-radius:var(--radius-sm);
+  transition:color var(--transition),background var(--transition);
+  white-space:nowrap;
+}
+.nav-link:hover{color:var(--blue);background:rgba(2,17,175,.05)}
+
+.dropdown{position:relative}
+.dropdown-toggle{display:flex;align-items:center;gap:.25rem}
+.dropdown-toggle svg{width:16px;height:16px;transition:transform var(--transition)}
+.dropdown:hover .dropdown-toggle svg{transform:rotate(180deg)}
+.dropdown-menu{
+  position:absolute;top:calc(100% + 8px);left:0;
+  background:var(--white);border:1px solid var(--gray-bd);
+  border-radius:var(--radius);box-shadow:var(--shadow-lg);
+  padding:.5rem;min-width:220px;
+  opacity:0;visibility:hidden;transform:translateY(-8px);
+  transition:all var(--transition);
+  z-index:200;
+}
+.dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.dropdown-menu a{
+  display:block;padding:.55rem .9rem;border-radius:6px;
+  font-size:.85rem;font-weight:500;color:var(--text);
+  transition:color var(--transition),background var(--transition);
+}
+.dropdown-menu a:hover{color:var(--blue);background:rgba(2,17,175,.06)}
+
+.btn{
+  display:inline-flex;align-items:center;gap:.4rem;
+  font-family:var(--font-body);font-weight:600;font-size:.875rem;
+  padding:.6rem 1.25rem;border-radius:var(--radius-sm);
+  transition:all var(--transition);white-space:nowrap;cursor:pointer;
+}
+.btn-primary{background:var(--blue);color:var(--white)}
+.btn-primary:hover{background:var(--blue-dk);box-shadow:0 4px 18px rgba(2,17,175,.3);transform:translateY(-1px)}
+.btn-green{background:var(--green);color:var(--black)}
+.btn-green:hover{background:var(--green-dk);box-shadow:0 4px 18px rgba(56,231,71,.35);transform:translateY(-1px)}
+.btn-outline{border:2px solid var(--white);color:var(--white)}
+.btn-outline:hover{background:var(--white);color:var(--blue)}
+.btn-lg{padding:.875rem 1.75rem;font-size:1rem;border-radius:var(--radius)}
+
+/* Hamburger */
+.hamburger{display:none;flex-direction:column;gap:5px;width:30px;padding:4px;cursor:pointer}
+.hamburger span{width:100%;height:2px;background:var(--black);border-radius:2px;transition:all var(--transition)}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Mobile nav */
+.mobile-nav{
+  display:none;position:absolute;top:70px;left:0;right:0;
+  background:var(--white);border-bottom:1px solid var(--gray-bd);
+  padding:1rem 1.25rem 1.5rem;box-shadow:0 8px 30px rgba(0,0,0,.1);
+  z-index:90;
+}
+.mobile-nav.open{display:block}
+.mobile-nav a{display:block;padding:.65rem 0;font-weight:500;border-bottom:1px solid var(--gray-bd);font-size:.95rem}
+.mobile-nav a:last-child{border:none}
+.mobile-sub{padding-left:1rem}
+.mobile-sub-toggle{display:flex;justify-content:space-between;align-items:center;padding:.65rem 0;font-weight:600;font-size:.95rem;border-bottom:1px solid var(--gray-bd);cursor:pointer}
+.mobile-sub-toggle svg{transition:transform var(--transition)}
+.mobile-sub-toggle.open svg{transform:rotate(180deg)}
+.mobile-sub-items{display:none;padding:.5rem 0}
+.mobile-sub-items.open{display:block}
+.mobile-sub-items a{padding:.45rem 0;font-size:.875rem;color:var(--gray);border:none}
+
+/* ===== HERO ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg, #020c6e 0%, #0211AF 45%, #0d1fa8 100%);
+  padding-top:5rem;padding-bottom:5rem;
+  min-height:640px;display:flex;align-items:center;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background-image:
+    radial-gradient(circle at 75% 40%, rgba(56,231,71,.12) 0%, transparent 55%),
+    radial-gradient(circle at 20% 80%, rgba(56,231,71,.07) 0%, transparent 45%);
+}
+/* Grid pattern */
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size:50px 50px;
+}
+.hero-content{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(56,231,71,.15);border:1px solid rgba(56,231,71,.3);color:var(--green);font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.35rem .85rem;border-radius:var(--radius-full);margin-bottom:1.5rem}
+.hero-eyebrow svg{width:14px;height:14px;fill:var(--green)}
+h1.hero-title{
+  font-family:var(--font-head);font-size:clamp(2.2rem,5vw,3.6rem);
+  font-weight:800;line-height:1.1;letter-spacing:-.03em;
+  color:var(--white);margin-bottom:1.25rem;
+}
+h1.hero-title em{font-style:normal;color:var(--green)}
+.hero-sub{font-size:1.1rem;line-height:1.65;color:rgba(255,255,255,.8);margin-bottom:2rem;max-width:500px}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-stats{display:flex;gap:2rem;margin-top:2.5rem;padding-top:2.5rem;border-top:1px solid rgba(255,255,255,.12)}
+.hero-stat-num{font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--white)}
+.hero-stat-label{font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.15rem}
+.hero-visual{position:relative}
+.hero-card{
+  background:rgba(255,255,255,.07);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.15);border-radius:20px;
+  padding:2rem;animation:float 5s ease-in-out infinite;
+}
+.hero-card-row{display:flex;align-items:center;gap:.75rem;padding:.6rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.hero-card-row:last-child{border:none}
+.hero-card-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hero-card-text{font-size:.85rem;color:rgba(255,255,255,.9);font-weight:500}
+.hero-card-badge{margin-left:auto;font-size:.7rem;font-weight:700;padding:.2rem .55rem;border-radius:var(--radius-full)}
+.badge-green{background:rgba(56,231,71,.2);color:var(--green)}
+.badge-blue{background:rgba(99,131,255,.2);color:#8fa8ff}
+
+/* ===== TICKER ===== */
+.ticker{background:var(--black);padding:.65rem 0;overflow:hidden}
+.ticker-inner{display:flex;white-space:nowrap;animation:ticker 28s linear infinite}
+.ticker-inner:hover{animation-play-state:paused}
+.ticker-item{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55);padding:0 2rem}
+.ticker-item span{color:var(--green)}
+
+/* ===== SECTION LABELS ===== */
+.section{padding:5rem 0}
+.section-alt{background:var(--gray-lt)}
+.section-label{display:inline-flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:.75rem}
+.section-label::before{content:'';width:20px;height:2px;background:var(--blue);border-radius:1px}
+h2.section-title{font-family:var(--font-head);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;line-height:1.15;letter-spacing:-.03em;color:var(--black)}
+h2.section-title em{font-style:normal;color:var(--blue)}
+.section-head{max-width:640px;margin-bottom:3.5rem}
+.section-head-center{margin-inline:auto;text-align:center}
+.section-sub{font-size:1.05rem;color:var(--gray);margin-top:.85rem;line-height:1.65}
+
+/* ===== SERVICES ===== */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}
+.service-card{
+  background:var(--white);border:1.5px solid var(--gray-bd);
+  border-radius:var(--radius);padding:2rem;
+  transition:all var(--transition);position:relative;overflow:hidden;
+}
+.service-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--blue),var(--green));
+  transform:scaleX(0);transform-origin:left;transition:transform var(--transition);
+}
+.service-card:hover{border-color:var(--blue);box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-icon{
+  width:52px;height:52px;border-radius:var(--radius-sm);
+  background:linear-gradient(135deg,rgba(2,17,175,.1),rgba(2,17,175,.05));
+  display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;
+  transition:transform var(--transition);
+}
+.service-card:hover .service-icon{transform:scale(1.08)}
+.service-icon svg{width:26px;height:26px;stroke:var(--blue);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.service-card h3{font-family:var(--font-head);font-size:1.1rem;font-weight:700;margin-bottom:.6rem;color:var(--black)}
+.service-card p{font-size:.9rem;line-height:1.65;color:var(--gray)}
+.service-tag{display:inline-flex;font-size:.72rem;font-weight:600;color:var(--blue);background:rgba(2,17,175,.07);padding:.2rem .6rem;border-radius:var(--radius-full);margin-top:1rem}
+
+/* Division sections */
+.division{padding:3.5rem 0;border-bottom:1px solid var(--gray-bd)}
+.division:last-child{border:none}
+.division-header{display:flex;align-items:flex-start;gap:1.25rem;margin-bottom:2.5rem}
+.division-num{font-family:var(--font-head);font-size:3.5rem;font-weight:800;color:rgba(2,17,175,.08);line-height:1;flex-shrink:0;margin-top:-.25rem}
+.division-info h2{font-family:var(--font-head);font-size:1.5rem;font-weight:800;margin-bottom:.35rem}
+.division-info p{font-size:.9rem;color:var(--gray);line-height:1.6;max-width:680px}
+.division-kpis{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2rem}
+.kpi-pill{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:600;color:var(--blue);background:rgba(2,17,175,.07);padding:.35rem .8rem;border-radius:var(--radius-full);border:1px solid rgba(2,17,175,.12)}
+.kpi-pill svg{width:13px;height:13px;stroke:var(--green);stroke-width:2.5;fill:none}
+
+/* ===== WHY US ===== */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5rem}
+.why-card{
+  background:var(--white);border-radius:var(--radius);padding:2rem;
+  box-shadow:var(--shadow);text-align:center;
+  transition:transform var(--transition),box-shadow var(--transition);
+}
+.why-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.why-icon{
+  width:64px;height:64px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue),var(--blue-lt));
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 1.25rem;
+}
+.why-icon svg{width:28px;height:28px;stroke:var(--white);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.why-card h3{font-family:var(--font-head);font-weight:700;font-size:1.05rem;margin-bottom:.6rem}
+.why-card p{font-size:.875rem;color:var(--gray);line-height:1.6}
+
+/* ===== STATS BAND ===== */
+.stats-band{background:linear-gradient(135deg,var(--blue-dk),var(--blue));padding:4rem 0}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2rem;text-align:center}
+.stat-num{font-family:var(--font-head);font-size:2.8rem;font-weight:800;color:var(--white);line-height:1}
+.stat-num sup{font-size:1.4rem;vertical-align:super}
+.stat-label{font-size:.85rem;color:rgba(255,255,255,.65);margin-top:.35rem;font-weight:500}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-track{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem}
+.testi-card{background:var(--white);border:1.5px solid var(--gray-bd);border-radius:var(--radius);padding:1.75rem;transition:all var(--transition)}
+.testi-card:hover{border-color:var(--blue);box-shadow:var(--shadow)}
+.testi-stars{display:flex;gap:.2rem;margin-bottom:1rem}
+.testi-stars svg{width:16px;height:16px;fill:var(--green)}
+.testi-text{font-size:.9rem;line-height:1.7;color:var(--gray);margin-bottom:1.25rem}
+.testi-author{display:flex;align-items:center;gap:.75rem}
+.testi-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,rgba(2,17,175,.15),rgba(56,231,71,.15));display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:800;font-size:1rem;color:var(--blue);flex-shrink:0}
+.testi-name{font-weight:700;font-size:.9rem}
+.testi-role{font-size:.78rem;color:var(--gray);margin-top:.1rem}
+
+/* ===== CTA BAND ===== */
+.cta-band{
+  background:var(--black);padding:5rem 0;
+  position:relative;overflow:hidden;
+}
+.cta-band::before{
+  content:'';position:absolute;top:-40%;right:-10%;
+  width:600px;height:600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(56,231,71,.08),transparent 70%);
+}
+.cta-inner{position:relative;z-index:1;text-align:center;max-width:680px;margin-inline:auto}
+.cta-inner h2{font-family:var(--font-head);font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;color:var(--white);margin-bottom:1rem;letter-spacing:-.03em}
+.cta-inner h2 em{font-style:normal;color:var(--green)}
+.cta-inner p{color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:2rem;font-size:1.05rem}
+.cta-actions{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+
+/* ===== CONTACT ===== */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem}
+.contact-item{display:flex;align-items:flex-start;gap:1rem}
+.contact-icon{width:46px;height:46px;background:rgba(2,17,175,.08);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-icon svg{width:22px;height:22px;stroke:var(--blue);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.contact-item h4{font-weight:700;font-size:.9rem;margin-bottom:.2rem}
+.contact-item p{font-size:.88rem;color:var(--gray);line-height:1.6}
+.social-row{display:flex;gap:.75rem;margin-top:.5rem}
+.social-btn{
+  width:38px;height:38px;border-radius:50%;
+  border:1.5px solid var(--gray-bd);
+  display:flex;align-items:center;justify-content:center;
+  transition:all var(--transition);
+}
+.social-btn:hover{border-color:var(--blue);background:var(--blue);color:var(--white)}
+.social-btn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+
+/* Form */
+.form-group{margin-bottom:1.25rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+label{display:block;font-size:.85rem;font-weight:600;margin-bottom:.45rem;color:var(--text)}
+input,textarea,select{
+  width:100%;padding:.75rem 1rem;
+  border:1.5px solid var(--gray-bd);border-radius:var(--radius-sm);
+  font-family:var(--font-body);font-size:.9rem;color:var(--text);
+  background:var(--white);
+  transition:border-color var(--transition),box-shadow var(--transition);
+  outline:none;
+}
+input:focus,textarea:focus,select:focus{
+  border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(2,17,175,.1);
+}
+textarea{resize:vertical;min-height:130px}
+.form-check{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:1.5rem}
+.form-check input[type=checkbox]{width:17px;height:17px;margin-top:.15rem;flex-shrink:0;accent-color:var(--blue)}
+.form-check label{font-size:.82rem;color:var(--gray);margin:0}
+.form-check a{color:var(--blue);text-decoration:underline}
+.input-error{border-color:#EF4444!important}
+.error-msg{font-size:.78rem;color:#EF4444;margin-top:.3rem}
+.success-toast,.error-toast{
+  position:fixed;top:1.25rem;right:1.25rem;z-index:9999;
+  padding:1rem 1.5rem;border-radius:var(--radius-sm);
+  font-weight:600;font-size:.9rem;box-shadow:var(--shadow-lg);
+  animation:fadeIn .3s ease;
+}
+.success-toast{background:#D1FAE5;color:#065F46}
+.error-toast{background:#FEE2E2;color:#991B1B}
+
+/* ===== FOOTER ===== */
+footer{background:var(--black);color:var(--white);padding:4.5rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr 1.5fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:2rem}
+.footer-logo{display:flex;align-items:center;gap:.6rem;font-family:var(--font-head);font-size:1.4rem;font-weight:800;margin-bottom:1rem}
+.footer-logo .logo-mark{background:var(--blue)}
+.footer-about{font-size:.875rem;color:rgba(255,255,255,.55);line-height:1.7;margin-bottom:1.25rem}
+.footer-social{display:flex;gap:.6rem}
+.footer-social a{
+  width:34px;height:34px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.15);
+  display:flex;align-items:center;justify-content:center;
+  transition:all var(--transition);
+}
+.footer-social a:hover{border-color:var(--green);background:rgba(56,231,71,.1)}
+.footer-social a svg{width:15px;height:15px;stroke:rgba(255,255,255,.65);fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.footer-social a:hover svg{stroke:var(--green)}
+.footer-col h4{font-family:var(--font-head);font-weight:700;font-size:.95rem;margin-bottom:1.25rem;color:var(--white)}
+.footer-col ul{display:flex;flex-direction:column;gap:.6rem}
+.footer-col ul a{font-size:.875rem;color:rgba(255,255,255,.55);transition:color var(--transition)}
+.footer-col ul a:hover{color:var(--green)}
+.footer-newsletter p{font-size:.875rem;color:rgba(255,255,255,.55);margin-bottom:.85rem;line-height:1.6}
+.newsletter-form{display:flex;gap:.5rem}
+.newsletter-form input{
+  flex:1;padding:.65rem .9rem;border-radius:var(--radius-sm);
+  border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.07);
+  color:var(--white);font-size:.85rem;
+}
+.newsletter-form input::placeholder{color:rgba(255,255,255,.35)}
+.newsletter-form input:focus{border-color:var(--green);box-shadow:none}
+.newsletter-form button{
+  background:var(--green);color:var(--black);
+  font-weight:700;font-size:.8rem;
+  padding:.65rem 1rem;border-radius:var(--radius-sm);
+  white-space:nowrap;cursor:pointer;transition:background var(--transition);
+}
+.newsletter-form button:hover{background:var(--green-dk)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.footer-bottom p{font-size:.8rem;color:rgba(255,255,255,.35)}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{font-size:.8rem;color:rgba(255,255,255,.35);transition:color var(--transition)}
+.footer-links a:hover{color:var(--white)}
+
+/* WhatsApp FAB */
+.wa-fab{
+  position:fixed;bottom:1.5rem;right:1.5rem;z-index:500;
+  width:56px;height:56px;border-radius:50%;
+  background:var(--green);color:var(--black);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(56,231,71,.45);
+  transition:transform var(--transition),box-shadow var(--transition);
+  animation:pulse 2.5s ease-in-out infinite;
+}
+.wa-fab:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(56,231,71,.6);animation:none}
+.wa-fab svg{width:28px;height:28px;fill:var(--black)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .hero-content{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  nav{display:none}
+  .hamburger{display:flex}
+  .header-inner .btn-primary{display:none}
+  .section{padding:3.5rem 0}
+  .form-row{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .testimonials-track{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
+@media(max-width:480px){
+  .hero-actions{flex-direction:column}
+  .hero-actions a{width:100%;justify-content:center}
+  .why-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .cta-actions{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="main-header">
+  <div class="container">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="/" class="logo" aria-label="Extein – Inicio">
+        <div class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l8 4V12H4V8.18l8-4zM4 14h16v2.82l-8 4-8-4V14z"/></svg>
+        </div>
+        <span class="logo-text">Ex<span>tein</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Navegación principal">
+        <a href="#quienes-somos" class="nav-link">Quiénes Somos</a>
+        <div class="dropdown">
+          <a href="#servicios" class="nav-link dropdown-toggle">
+            Divisiones
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#it-essentials" role="menuitem">IT Essentials</a>
+            <a href="#cloud-hosting" role="menuitem">Cloud & Hosting</a>
+            <a href="#pro-systems" role="menuitem">Pro Systems</a>
+            <a href="#gaming" role="menuitem">Gaming & High-Performance</a>
+            <a href="#security" role="menuitem">Security Solutions</a>
+            <a href="#network" role="menuitem">Network & Data Center</a>
+            <a href="#smart" role="menuitem">Smart Solutions</a>
+            <a href="#marketing" role="menuitem">Marketing & AI</a>
+            <a href="#av-projects" role="menuitem">AV Projects</a>
+            <a href="#infraestructura" role="menuitem">Infraestructura</a>
+          </div>
+        </div>
+        <a href="#contacto" class="nav-link">Contáctanos</a>
+      </nav>
+
+      <a href="https://wa.me/5218112110198" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Contáctanos por WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.845L.057 23.571a.5.5 0 00.613.633l5.797-1.52A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.944 9.944 0 01-5.13-1.424l-.369-.217-3.769.988.985-3.686-.237-.38A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        WhatsApp
+      </a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <div class="container">
+      <a href="#quienes-somos">Quiénes Somos</a>
+      <div>
+        <div class="mobile-sub-toggle" id="mobile-sub-toggle">
+          Divisiones
+          <svg width="18" height="18" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div class="mobile-sub-items" id="mobile-sub-items">
+          <a href="#it-essentials">IT Essentials</a>
+          <a href="#cloud-hosting">Cloud & Hosting</a>
+          <a href="#pro-systems">Pro Systems</a>
+          <a href="#gaming">Gaming & High-Performance</a>
+          <a href="#security">Security Solutions</a>
+          <a href="#network">Network & Data Center</a>
+          <a href="#smart">Smart Solutions</a>
+          <a href="#marketing">Marketing & AI</a>
+          <a href="#av-projects">AV Projects</a>
+          <a href="#infraestructura">Infraestructura</a>
+        </div>
+      </div>
+      <a href="#contacto">Contáctanos</a>
+      <a href="https://wa.me/5218112110198" target="_blank" rel="noopener noreferrer" style="color:var(--blue);font-weight:600">📱 WhatsApp: +52 81 1211 0198</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Sección principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="animate-fadeup">
+        <div class="hero-eyebrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/></svg>
+          +20 años en Monterrey
+        </div>
+        <h1 class="hero-title">
+          Tecnología que <em>impulsa</em> tu PYME
+        </h1>
+        <p class="hero-sub">
+          Soporte IT, cloud, ciberseguridad e infraestructura para empresas en Monterrey, San Pedro y Saltillo. Respuesta garantizada en menos de 2 horas.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-green btn-lg">
+            Solicita una cotización
+            <svg width="18" height="18" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#servicios" class="btn btn-outline btn-lg">Ver servicios</a>
+        </div>
+        <div class="hero-stats" aria-label="Estadísticas clave">
+          <div>
+            <div class="hero-stat-num">+20</div>
+            <div class="hero-stat-label">Años de experiencia</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">500+</div>
+            <div class="hero-stat-label">Clientes satisfechos</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">24/7</div>
+            <div class="hero-stat-label">Soporte continuo</div>
+          </div>
+        </div>
+      </div>
+      <!-- Floating card visual -->
+      <div class="hero-visual animate-fadeup delay-3" aria-hidden="true">
+        <div class="hero-card">
+          <div style="font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.75rem">Estado del Sistema</div>
+          <div class="hero-card-row">
+            <div class="hero-card-icon" style="background:rgba(56,231,71,.15)">
+              <svg width="18" height="18" viewBox="0 0 24 24" stroke="#38E747" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <span class="hero-card-text">Infraestructura Cloud</span>
+            <span class="hero-card-badge badge-green">99.9% UP</span>
+          </div>
+          <div class="hero-card-row">
+            <div class="hero-card-icon" style="background:rgba(99,131,255,.15)">
+              <svg width="18" height="18" viewBox="0 0 24 24" stroke="#8fa8ff" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="hero-card-text">Monitoreo de Seguridad</span>
+            <span class="hero-card-badge badge-green">Activo</span>
+          </div>
+          <div class="hero-card-row">
+            <div class="hero-card-icon" style="background:rgba(56,231,71,.1)">
+              <svg width="18" height="18" viewBox="0 0 24 24" stroke="#38E747" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <span class="hero-card-text">Soporte Técnico</span>
+            <span class="hero-card-badge badge-blue">24/7</span>
+          </div>
+          <div class="hero-card-row">
+            <div class="hero-card-icon" style="background:rgba(56,231,71,.1)">
+              <svg width="18" height="18" viewBox="0 0 24 24" stroke="#38E747" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <span class="hero-card-text">Backup Automático</span>
+            <span class="hero-card-badge badge-green">OK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner" id="ticker-inner">
+    <!-- duplicated for infinite loop -->
+    <span class="ticker-item"><span>✦</span> IT Essentials</span>
+    <span class="ticker-item"><span>✦</span> Cloud & Hosting</span>
+    <span class="ticker-item"><span>✦</span> Security Solutions</span>
+    <span class="ticker-item"><span>✦</span> Network & Data Center</span>
+    <span class="ticker-item"><span>✦</span> Smart Solutions</span>
+    <span class="ticker-item"><span>✦</span> Marketing & AI</span>
+    <span class="ticker-item"><span>✦</span> AV Projects</span>
+    <span class="ticker-item"><span>✦</span> Infraestructura</span>
+    <span class="ticker-item"><span>✦</span> Pro Systems</span>
+    <span class="ticker-item"><span>✦</span> Gaming & High-Performance</span>
+    <span class="ticker-item"><span>✦</span> IT Essentials</span>
+    <span class="ticker-item"><span>✦</span> Cloud & Hosting</span>
+    <span class="ticker-item"><span>✦</span> Security Solutions</span>
+    <span class="ticker-item"><span>✦</span> Network & Data Center</span>
+    <span class="ticker-item"><span>✦</span> Smart Solutions</span>
+    <span class="ticker-item"><span>✦</span> Marketing & AI</span>
+    <span class="ticker-item"><span>✦</span> AV Projects</span>
+    <span class="ticker-item"><span>✦</span> Infraestructura</span>
+    <span class="ticker-item"><span>✦</span> Pro Systems</span>
+    <span class="ticker-item"><span>✦</span> Gaming & High-Performance</span>
+  </div>
+</div>
+
+<!-- ===== QUIÉNES SOMOS ===== -->
+<section class="section" id="quienes-somos">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+      <div>
+        <div class="section-label">Sobre Extein</div>
+        <h2 class="section-title">Tu socio estratégico en <em>tecnología</em> desde 2004</h2>
+        <p style="margin-top:1rem;font-size:1.05rem;line-height:1.75;color:var(--gray)">Somos una empresa regiomontana especializada en soluciones tecnológicas para PYMEs. Con más de 20 años integrando infraestructura, cloud, seguridad y transformación digital, acompañamos a cientos de empresas en Monterrey, San Pedro y Saltillo.</p>
+        <p style="margin-top:.85rem;font-size:1.05rem;line-height:1.75;color:var(--gray)">Nuestro equipo de ingenieros certificados trabaja con tiempos de respuesta garantizados y un servicio de soporte 24/7 que mantiene tu negocio funcionando sin interrupciones.</p>
+        <div style="display:flex;gap:1.5rem;margin-top:2rem;flex-wrap:wrap">
+          <a href="#contacto" class="btn btn-primary btn-lg">Hablar con un experto</a>
+          <a href="#servicios" class="btn" style="border:1.5px solid var(--gray-bd);color:var(--text)">Ver nuestros servicios</a>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem" aria-hidden="true">
+        <div style="background:linear-gradient(135deg,var(--blue),var(--blue-lt));border-radius:var(--radius);padding:2rem;color:var(--white)">
+          <div style="font-family:var(--font-head);font-size:3rem;font-weight:800;line-height:1">+20</div>
+          <div style="margin-top:.35rem;font-size:.9rem;opacity:.75">Años de experiencia</div>
+        </div>
+        <div style="background:var(--gray-lt);border-radius:var(--radius);padding:2rem">
+          <div style="font-family:var(--font-head);font-size:3rem;font-weight:800;line-height:1;color:var(--blue)">500+</div>
+          <div style="margin-top:.35rem;font-size:.9rem;color:var(--gray)">Clientes atendidos</div>
+        </div>
+        <div style="background:var(--gray-lt);border-radius:var(--radius);padding:2rem">
+          <div style="font-family:var(--font-head);font-size:3rem;font-weight:800;line-height:1;color:var(--blue)">98%</div>
+          <div style="margin-top:.35rem;font-size:.9rem;color:var(--gray)">Resolución primer contacto</div>
+        </div>
+        <div style="background:linear-gradient(135deg,var(--green),#22c231);border-radius:var(--radius);padding:2rem">
+          <div style="font-family:var(--font-head);font-size:3rem;font-weight:800;line-height:1;color:var(--black)">&lt;2h</div>
+          <div style="margin-top:.35rem;font-size:.9rem;color:rgba(0,0,0,.65)">Tiempo de respuesta</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section section-alt" id="servicios">
+  <div class="container">
+    <div class="section-head section-head-center">
+      <div class="section-label" style="justify-content:center">Divisiones</div>
+      <h2 class="section-title" style="text-align:center">Soluciones tecnológicas <em>integrales</em></h2>
+      <p class="section-sub" style="text-align:center">10 divisiones especializadas para cubrir cada aspecto de la tecnología en tu empresa.</p>
+    </div>
+
+    <!-- IT Essentials -->
+    <div class="division" id="it-essentials">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">01</div>
+        <div class="division-info">
+          <h2>IT Essentials</h2>
+          <p>Soporte técnico, mantenimiento e instalación de equipos. Resolvemos el 98% de incidencias en la primera intervención con tiempos de respuesta garantizados para mantener tu empresa operando.</p>
+          <div class="division-kpis" style="margin-top:.75rem">
+            <span class="kpi-pill"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>&lt;2h respuesta críticas</span>
+            <span class="kpi-pill"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>98% resolución 1er contacto</span>
+            <span class="kpi-pill"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Monitoreo proactivo 24/7</span>
+          </div>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Soporte Técnico</h3>
+          <p>Asistencia remota y presencial para resolver problemas informáticos con tiempos de respuesta garantizados.</p>
+          <span class="service-tag">Soporte 24/7</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h3>Mantenimiento Preventivo</h3>
+          <p>Mantenimiento preventivo y correctivo para equipos informáticos, servidores y periféricos.</p>
+          <span class="service-tag">Presencial & Remoto</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Instalación & Configuración</h3>
+          <p>Configuración e instalación de hardware, software y sistemas operativos para empresas.</p>
+          <span class="service-tag">Hardware & Software</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- Cloud & Hosting -->
+    <div class="division" id="cloud-hosting">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">02</div>
+        <div class="division-info">
+          <h2>Cloud & Hosting</h2>
+          <p>Infraestructura cloud con 99.9% de uptime garantizado por SLA. Backups automáticos diarios, escalabilidad instantánea y protección DDoS incluida en todos los planes.</p>
+          <div class="division-kpis" style="margin-top:.75rem">
+            <span class="kpi-pill"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>99.9% uptime SLA</span>
+            <span class="kpi-pill"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Backups diarios 30 días</span>
+            <span class="kpi-pill"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Protección DDoS incluida</span>
+          </div>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+          <h3>Servidores VPS</h3>
+          <p>Servidores virtuales privados con recursos dedicados, alto rendimiento y disponibilidad garantizada.</p>
+          <span class="service-tag">Alta disponibilidad</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>Dominios & DNS</h3>
+          <p>Registro, renovación y gestión de dominios con panel de control intuitivo y soporte DNS avanzado.</p>
+          <span class="service-tag">Gestión completa</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <h3>Cloud Escalable</h3>
+          <p>Almacenamiento y cómputo en la nube con escalabilidad instantánea hasta 10x los recursos base.</p>
+          <span class="service-tag">Escalabilidad x10</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- Pro Systems -->
+    <div class="division" id="pro-systems">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">03</div>
+        <div class="division-info">
+          <h2>Pro Systems</h2>
+          <p>Estaciones de trabajo profesionales, servidores dedicados y periféricos de alta gama para entornos exigentes. Equipamiento certificado para diseño, ingeniería y producción.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Workstations</h3>
+          <p>Estaciones de trabajo de alto rendimiento para diseño gráfico, CAD, ingeniería y producción multimedia.</p>
+          <span class="service-tag">Alto rendimiento</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2" ry="2"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/></svg></div>
+          <h3>Servidores Dedicados</h3>
+          <p>Servidores físicos con configuración personalizada para cargas de trabajo críticas y bases de datos.</p>
+          <span class="service-tag">Misión crítica</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
+          <h3>Periféricos Profesionales</h3>
+          <p>Monitores, impresoras, escáneres y periféricos de alta gama para ambientes de trabajo profesional.</p>
+          <span class="service-tag">Equipos certificados</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- Gaming & High-Performance -->
+    <div class="division" id="gaming">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">04</div>
+        <div class="division-info">
+          <h2>Gaming & High-Performance</h2>
+          <p>Sistemas de alto rendimiento para gaming, rendering y computación intensiva. Soluciones personalizadas con los últimos procesadores, tarjetas gráficas y tecnologías de refrigeración.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="6" y1="12" x2="18" y2="12"/><line x1="12" y1="6" x2="12" y2="18"/><path d="M5 7l1.5 1.5M5 17l1.5-1.5M19 7l-1.5 1.5M19 17l-1.5-1.5"/><circle cx="12" cy="12" r="10"/></svg></div>
+          <h3>Gaming Rigs</h3>
+          <p>Computadoras para gaming con las últimas GPUs, procesadores de alta frecuencia y soluciones térmicas avanzadas.</p>
+          <span class="service-tag">Última generación</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>Rendering & GPU Computing</h3>
+          <p>Estaciones de trabajo con GPU multi-core para renderizado 3D, machine learning e inteligencia artificial.</p>
+          <span class="service-tag">GPU Clusters</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div>
+          <h3>Periféricos Gaming</h3>
+          <p>Monitores de alta frecuencia, teclados mecánicos, ratones de precisión y headsets para gaming profesional.</p>
+          <span class="service-tag">Competencia & Pro</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- Security Solutions -->
+    <div class="division" id="security">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">05</div>
+        <div class="division-info">
+          <h2>Security Solutions</h2>
+          <p>Ciberseguridad y videovigilancia integral para proteger tu empresa. Firewalls de nueva generación, CCTV 4K, control de accesos biométrico y auditorías de seguridad.</p>
+          <div class="division-kpis" style="margin-top:.75rem">
+            <span class="kpi-pill"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Monitoreo 24/7</span>
+            <span class="kpi-pill"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>NGFW y EDR</span>
+            <span class="kpi-pill"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>CCTV 4K IP</span>
+          </div>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Ciberseguridad</h3>
+          <p>Firewalls NGFW, antivirus empresarial, EDR y gestión de vulnerabilidades para proteger tu información.</p>
+          <span class="service-tag">Protección avanzada</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+          <h3>CCTV & Videovigilancia</h3>
+          <p>Cámaras IP 4K, grabadores NVR y plataformas de monitoreo remoto para instalaciones comerciales e industriales.</p>
+          <span class="service-tag">4K IP Cameras</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <h3>Control de Accesos</h3>
+          <p>Torniquetes, lectores biométricos, tarjetas inteligentes e integración con videovigilancia para acceso seguro.</p>
+          <span class="service-tag">Biométrico</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- Network & Data Center -->
+    <div class="division" id="network">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">06</div>
+        <div class="division-info">
+          <h2>Network & Data Center</h2>
+          <p>Diseño, instalación y administración de redes empresariales. Switches administrables, Wi-Fi empresarial y data centers a medida para alta disponibilidad y rendimiento.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="6"/><rect x="9" y="16" width="6" height="6"/><rect x="2" y="9" width="6" height="6"/><rect x="16" y="9" width="6" height="6"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="8" y1="12" x2="12" y2="12"/><line x1="12" y1="12" x2="16" y2="12"/></svg></div>
+          <h3>Redes Empresariales</h3>
+          <p>Diseño e implementación de redes LAN/WAN con switches administrables Cisco, HPE, Ubiquiti y Fortinet.</p>
+          <span class="service-tag">LAN / WAN / SD-WAN</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
+          <h3>Wi-Fi Empresarial</h3>
+          <p>Soluciones inalámbricas de alta densidad para oficinas, almacenes y campus con cobertura garantizada.</p>
+          <span class="service-tag">Wi-Fi 6 & 6E</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+          <h3>Data Center</h3>
+          <p>Diseño y construcción de cuartos de servidores: racks, UPS, climatización y cableado estructurado certificado.</p>
+          <span class="service-tag">Tier II / III</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- Smart Solutions -->
+    <div class="division" id="smart">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">07</div>
+        <div class="division-info">
+          <h2>Smart Solutions</h2>
+          <p>Automatización de edificios, IoT industrial y eficiencia energética para espacios inteligentes. Transformamos oficinas y plantas en entornos conectados y eficientes.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h3>Automatización de Edificios</h3>
+          <p>Sistemas BMS para control de iluminación, climatización, accesos y sensores en edificios corporativos.</p>
+          <span class="service-tag">BMS & BAS</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20V10M18.4 4.6a9 9 0 0 1 0 14.8M5.6 4.6a9 9 0 0 0 0 14.8"/></svg></div>
+          <h3>IoT Industrial</h3>
+          <p>Dispositivos conectados para monitoreo y control remoto de equipos, maquinaria y activos empresariales.</p>
+          <span class="service-tag">Sensores & Gateways</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>Eficiencia Energética</h3>
+          <p>Sistemas inteligentes de control energético para reducir consumo hasta un 30% en instalaciones comerciales.</p>
+          <span class="service-tag">Ahorro hasta 30%</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- Marketing & AI -->
+    <div class="division" id="marketing">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">08</div>
+        <div class="division-info">
+          <h2>Marketing & AI</h2>
+          <p>Marketing digital potenciado con inteligencia artificial. Sitios web optimizados para SEO, chatbots inteligentes y automatización de marketing para aumentar ventas y visibilidad online.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <h3>Diseño Web SEO</h3>
+          <p>Desarrollo de sitios web responsivos, optimizados para SEO y con experiencia de usuario excepcional que convierte visitas en clientes.</p>
+          <span class="service-tag">SEO & Conversión</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Chatbots con IA</h3>
+          <p>Asistentes virtuales inteligentes para atención al cliente, ventas y soporte técnico disponibles 24/7.</p>
+          <span class="service-tag">Powered by AI</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <h3>Automatización de Marketing</h3>
+          <p>Email marketing, nurturing de leads y CRM automatizado con IA para maximizar el retorno de inversión.</p>
+          <span class="service-tag">Email & CRM</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- AV Projects -->
+    <div class="division" id="av-projects">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">09</div>
+        <div class="division-info">
+          <h2>AV Projects</h2>
+          <p>Proyectos audiovisuales para espacios corporativos y comerciales. Audio profesional, video 4K e integración de espacios multimedia que transforman salas de reuniones y auditorios.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg></div>
+          <h3>Audio Profesional</h3>
+          <p>Sistemas de sonido distribuido para salas de conferencias, auditorios y espacios comerciales con acústica optimizada.</p>
+          <span class="service-tag">Salas & Auditorios</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+          <h3>Videoconferencia 4K</h3>
+          <p>Instalación de pantallas 4K, proyectores laser y sistemas de videoconferencia de alta definición.</p>
+          <span class="service-tag">4K & HD</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+          <h3>Integración de Espacios</h3>
+          <p>Diseño e implementación de soluciones AV integradas para salas de juntas, lobbies y espacios corporativos.</p>
+          <span class="service-tag">Corporativo</span>
+        </article>
+      </div>
+    </div>
+
+    <!-- Infraestructura -->
+    <div class="division" id="infraestructura">
+      <div class="division-header">
+        <div class="division-num" aria-hidden="true">10</div>
+        <div class="division-info">
+          <h2>Infraestructura</h2>
+          <p>Fibra óptica, sistemas de voz y datos, y remodelación de oficinas con enfoque tecnológico. Espacios de trabajo modernos, eficientes y preparados para el futuro digital.</p>
+        </div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg></div>
+          <h3>Fibra Óptica</h3>
+          <p>Instalación de redes de fibra óptica para edificios y campus empresariales con alta velocidad y baja latencia.</p>
+          <span class="service-tag">Hasta 10Gbps</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.81 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l.58-.58"/></svg></div>
+          <h3>Voz y Datos</h3>
+          <p>Telefonía IP, centralitas virtuales y soluciones de comunicaciones unificadas para equipos distribuidos.</p>
+          <span class="service-tag">VoIP & UCaaS</span>
+        </article>
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h3>Remodelación de Oficinas</h3>
+          <p>Diseño de espacios de trabajo con enfoque tecnológico: conectividad, ergonomía y sistemas inteligentes.</p>
+          <span class="service-tag">Smart Offices</span>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== STATS BAND ===== -->
+<div class="stats-band" aria-label="Estadísticas Extein">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-num">+20<sup>años</sup></div>
+        <div class="stat-label">Experiencia en el sector</div>
+      </div>
+      <div>
+        <div class="stat-num">500<sup>+</sup></div>
+        <div class="stat-label">Clientes satisfechos</div>
+      </div>
+      <div>
+        <div class="stat-num">98<sup>%</sup></div>
+        <div class="stat-label">Resolución 1er contacto</div>
+      </div>
+      <div>
+        <div class="stat-num">&lt;2<sup>h</sup></div>
+        <div class="stat-label">Respuesta garantizada</div>
+      </div>
+      <div>
+        <div class="stat-num">24<sup>/7</sup></div>
+        <div class="stat-label">Soporte continuo</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== WHY US ===== -->
+<section class="section" id="por-que-extein">
+  <div class="container">
+    <div class="section-head section-head-center">
+      <div class="section-label" style="justify-content:center">¿Por qué elegirnos?</div>
+      <h2 class="section-title" style="text-align:center">La diferencia <em>Extein</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+        <h3>+20 Años de Experiencia</h3>
+        <p>Dos décadas acompañando a PYMEs en su crecimiento tecnológico con soluciones probadas y equipo especializado.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Innovación Constante</h3>
+        <p>Actualizamos continuamente nuestro portafolio con las tecnologías más recientes para ofrecerte siempre lo mejor.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Soporte 24/7</h3>
+        <p>Disponibles las 24 horas, los 7 días de la semana para resolver cualquier incidencia y mantener tu empresa operando.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Soluciones a Medida</h3>
+        <p>Cada empresa es diferente. Adaptamos nuestras soluciones a tus necesidades específicas para resultados óptimos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head section-head-center">
+      <div class="section-label" style="justify-content:center">Testimonios</div>
+      <h2 class="section-title" style="text-align:center">Lo que dicen nuestros <em>clientes</em></h2>
+    </div>
+    <div class="testimonials-track">
+      <article class="testi-card">
+        <div class="testi-stars" aria-label="5 estrellas">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testi-text">Extein transformó completamente nuestra infraestructura. Su equipo implementó soluciones que aumentaron nuestra productividad un 30%. El soporte 24/7 nos da tranquilidad total para operar.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">CR</div>
+          <div>
+            <div class="testi-name">Carlos Rodríguez</div>
+            <div class="testi-role">Director de Operaciones · Grupo Innova</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-stars" aria-label="5 estrellas">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testi-text">Después de varios intentos con otros proveedores, encontramos en Extein un socio confiable. Su solución cloud redujo costos significativamente y aumentó la seguridad de nuestros datos críticos.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">MS</div>
+          <div>
+            <div class="testi-name">Marta Sánchez</div>
+            <div class="testi-role">CEO · Diseños Creativos S.A.</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card">
+        <div class="testi-stars" aria-label="5 estrellas">
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testi-text">El sistema de seguridad integral implementado por Extein superó todas nuestras expectativas. El equipo fue muy profesional y la calidad del equipamiento instalado es verdaderamente excepcional.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">JM</div>
+          <div>
+            <div class="testi-name">Javier Méndez</div>
+            <div class="testi-role">Gerente General · Constructora Horizonte</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<div class="cta-band">
+  <div class="container">
+    <div class="cta-inner">
+      <h2>¿Listo para llevar tu empresa al <em>siguiente nivel</em>?</h2>
+      <p>Contáctanos hoy para una consulta gratuita. Te ayudamos a identificar las soluciones tecnológicas que tu empresa necesita para crecer.</p>
+      <div class="cta-actions">
+        <a href="#contacto" class="btn btn-green btn-lg">
+          Solicita cotización gratuita
+          <svg width="18" height="18" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/5218112110198" target="_blank" rel="noopener noreferrer" class="btn" style="border:1.5px solid rgba(255,255,255,.2);color:var(--white)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.845L.057 23.571a.5.5 0 00.613.633l5.797-1.52A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.944 9.944 0 01-5.13-1.424l-.369-.217-3.769.988.985-3.686-.237-.38A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          WhatsApp directo
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="section-head section-head-center" style="margin-bottom:3rem">
+      <div class="section-label" style="justify-content:center">Contacto</div>
+      <h2 class="section-title" style="text-align:center">Hablemos de tu <em>proyecto</em></h2>
+      <p class="section-sub" style="text-align:center">Completa el formulario y un especialista te contactará en menos de 24 horas.</p>
+    </div>
+    <div class="contact-grid">
+      <!-- Form -->
+      <div>
+        <form id="contact-form" novalidate aria-label="Formulario de contacto">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nombre completo <span style="color:#EF4444" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Juan Pérez" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico <span style="color:#EF4444" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="juan@empresa.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Teléfono / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+52 81 1234 5678" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="service">Servicio de interés</label>
+              <select id="service" name="service">
+                <option value="">Selecciona un servicio</option>
+                <option>IT Essentials</option>
+                <option>Cloud & Hosting</option>
+                <option>Pro Systems</option>
+                <option>Gaming & High-Performance</option>
+                <option>Security Solutions</option>
+                <option>Network & Data Center</option>
+                <option>Smart Solutions</option>
+                <option>Marketing & AI</option>
+                <option>AV Projects</option>
+                <option>Infraestructura</option>
+                <option>Consulta general</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje <span style="color:#EF4444" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" placeholder="Cuéntanos sobre tu empresa y qué solución necesitas..." required></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="privacy">Acepto la <a href="#" style="color:var(--blue)">política de privacidad</a> y el tratamiento de mis datos personales para recibir una respuesta a mi consulta.</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center" id="submit-btn">
+            Enviar mensaje
+            <svg width="18" height="18" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <h4>Ubicaciones</h4>
+            <p>Monterrey Centro<br>San Pedro Garza García<br>Saltillo, Coahuila</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.9 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.81 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l.55-.58a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 14h-.08z"/></svg></div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/5218112110198" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">+52 1 81 1211 0198</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div>
+            <h4>Correo electrónico</h4>
+            <p><a href="mailto:ventas@extein.com.mx" style="color:var(--blue)">ventas@extein.com.mx</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div>
+            <h4>Horario de atención</h4>
+            <p>Lunes a Viernes: 9:00 – 18:00<br><strong>Soporte técnico: 24/7</strong></p>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-weight:700;margin-bottom:.75rem;font-size:.9rem">Síguenos en redes sociales</h4>
+          <div class="social-row" aria-label="Redes sociales">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo" aria-label="Extein">
+          <div class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18l8 4V12H4V8.18l8-4zM4 14h16v2.82l-8 4-8-4V14z"/></svg>
+          </div>
+          <span>Extein</span>
+        </div>
+        <p class="footer-about">Tu socio estratégico en tecnología para PYMEs. Más de 20 años impulsando empresas en Monterrey, San Pedro y Saltillo con soluciones IT confiables.</p>
+        <div class="footer-social" aria-label="Redes sociales">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#por-que-extein">¿Por qué Extein?</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Divisiones</h4>
+        <ul>
+          <li><a href="#it-essentials">IT Essentials</a></li>
+          <li><a href="#cloud-hosting">Cloud & Hosting</a></li>
+          <li><a href="#security">Security Solutions</a></li>
+          <li><a href="#network">Network & Data Center</a></li>
+          <li><a href="#smart">Smart Solutions</a></li>
+          <li><a href="#marketing">Marketing & AI</a></li>
+          <li><a href="#av-projects">AV Projects</a></li>
+          <li><a href="#infraestructura">Infraestructura</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Novedades tecnológicas</h4>
+        <p>Recibe nuestras últimas noticias, ofertas y consejos tecnológicos para tu empresa.</p>
+        <form class="newsletter-form" id="newsletter-form" novalidate>
+          <input type="email" placeholder="tu@email.com" required aria-label="Correo para newsletter">
+          <button type="submit">Suscribir</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Extein. Todos los derechos reservados. · Monterrey, Nuevo León, México</p>
+      <div class="footer-links">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Aviso legal</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/5218112110198" target="_blank" rel="noopener noreferrer" class="wa-fab" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.845L.057 23.571a.5.5 0 00.613.633l5.797-1.52A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.944 9.944 0 01-5.13-1.424l-.369-.217-3.769.988.985-3.686-.237-.38A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+(function() {
+  'use strict';
+
+  // === Header scroll ===
+  const header = document.getElementById('main-header');
+  let lastScroll = 0;
+  window.addEventListener('scroll', function() {
+    const curr = window.pageYOffset;
+    if (curr > 80) {
+      header.classList.add('scrolled');
+      if (curr > lastScroll && curr > 200) {
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        header.style.transform = 'translateY(0)';
+      }
+    } else {
+      header.classList.remove('scrolled');
+      header.style.transform = 'translateY(0)';
+    }
+    lastScroll = curr;
+  }, { passive: true });
+
+  // === Mobile menu ===
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', function() {
+    const isOpen = hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+    mobileNav.setAttribute('aria-hidden', String(!isOpen));
+  });
+
+  // Mobile sub-menu
+  const subToggle = document.getElementById('mobile-sub-toggle');
+  const subItems = document.getElementById('mobile-sub-items');
+  subToggle.addEventListener('click', function() {
+    const isOpen = subToggle.classList.toggle('open');
+    subItems.classList.toggle('open', isOpen);
+  });
+
+  // Close mobile nav on link click
+  mobileNav.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileNav.setAttribute('aria-hidden', 'true');
+    });
+  });
+
+  // === Smooth scroll ===
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      const id = this.getAttribute('href');
+      if (id === '#') return;
+      const target = document.querySelector(id);
+      if (target) {
+        e.preventDefault();
+        const offset = header.offsetHeight;
+        const top = target.getBoundingClientRect().top + window.pageYOffset - offset - 16;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // === Contact Form ===
+  const contactForm = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+
+  function showToast(msg, isError) {
+    const toast = document.createElement('div');
+    toast.className = isError ? 'error-toast' : 'success-toast';
+    toast.textContent = msg;
+    toast.setAttribute('role', 'alert');
+    document.body.appendChild(toast);
+    setTimeout(function() { toast.remove(); }, 5000);
+  }
+
+  function validateField(field) {
+    const parent = field.closest('.form-group') || field.parentElement;
+    let err = parent.querySelector('.error-msg');
+    if (field.required && !field.value.trim()) {
+      field.classList.add('input-error');
+      if (!err) {
+        err = document.createElement('div');
+        err.className = 'error-msg';
+        err.textContent = 'Este campo es obligatorio';
+        parent.appendChild(err);
+      }
+      return false;
+    }
+    if (field.type === 'email' && field.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
+      field.classList.add('input-error');
+      if (!err) {
+        err = document.createElement('div');
+        err.className = 'error-msg';
+        err.textContent = 'Ingresa un correo válido';
+        parent.appendChild(err);
+      }
+      return false;
+    }
+    field.classList.remove('input-error');
+    if (err) err.remove();
+    return true;
+  }
+
+  contactForm.querySelectorAll('input, textarea, select').forEach(function(f) {
+    f.addEventListener('input', function() { validateField(this); });
+    f.addEventListener('blur', function() { validateField(this); });
+  });
+
+  contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    let valid = true;
+    contactForm.querySelectorAll('input[required], textarea[required]').forEach(function(f) {
+      if (!validateField(f)) valid = false;
+    });
+    const privacy = document.getElementById('privacy');
+    if (!privacy.checked) {
+      valid = false;
+      showToast('Debes aceptar la política de privacidad.', true);
+    }
+    if (!valid) return;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation:spin 1s linear infinite"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg> Enviando...';
+    try {
+      await new Promise(function(r) { setTimeout(r, 1800); });
+      showToast('¡Mensaje enviado! Te contactaremos en menos de 24 horas.', false);
+      contactForm.reset();
+    } catch(err) {
+      showToast('Hubo un error. Por favor intenta de nuevo.', true);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Enviar mensaje <svg width="18" height="18" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
+    }
+  });
+
+  // Newsletter
+  document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const emailInput = this.querySelector('input[type=email]');
+    if (!emailInput.value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+      emailInput.style.borderColor = '#EF4444';
+      return;
+    }
+    emailInput.style.borderColor = '';
+    showToast('¡Te has suscrito exitosamente!', false);
+    this.reset();
+  });
+
+  // === Intersection Observer for animations ===
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.service-card, .why-card, .testi-card').forEach(function(el) {
+      el.style.opacity = '0';
+      el.style.animation = 'fadeUp .5s ease both paused';
+      observer.observe(el);
+    });
+  }
+
+  // === Spinner keyframes (dynamic) ===
+  const style = document.createElement('style');
+  style.textContent = '@keyframes spin { to { transform: rotate(360deg); } }';
+  document.head.appendChild(style);
+
+})();
+</script>
+</body>
+</html>
