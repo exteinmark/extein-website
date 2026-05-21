@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://extein.com.mx/sitemap.xml
+
+# Block non-existent paths
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /*.php$
