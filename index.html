@@ -26,11 +26,26 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":["LocalBusiness","ProfessionalService"],"name":"Extein","description":"MSP enterprise en Monterrey: infraestructura TI crítica, cloud hosting SLA 99.9%, ciberseguridad Fortinet, redes Cisco y soporte 24/7.","url":"https://extein.com.mx","telephone":"+52-81-2897-8162","email":"ventas@extein.com.mx","priceRange":"$$","address":[{"@type":"PostalAddress","addressLocality":"Monterrey","addressRegion":"NL","postalCode":"64000","addressCountry":"MX"},{"@type":"PostalAddress","addressLocality":"San Pedro Garza García","addressRegion":"NL","addressCountry":"MX"},{"@type":"PostalAddress","addressLocality":"Santa Catarina","addressRegion":"NL","addressCountry":"MX"},{"@type":"PostalAddress","addressLocality":"Saltillo","addressRegion":"COA","addressCountry":"MX"}],"openingHours":["Mo-Fr 09:00-18:00","Sa 09:00-13:00"],"areaServed":[{"@type":"City","name":"Monterrey"},{"@type":"City","name":"San Pedro Garza García"},{"@type":"City","name":"Saltillo"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127","bestRating":"5"},"foundingDate":"2004","sameAs":["https://wa.me/528128978162"]}
 </script>
+<link rel="preload" as="image" href="logos/icon-transparent.png">
+<link rel="preload" as="image" href="logos/letras-transparent.png">
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"></noscript>
 
+<style id="critical">
+body{font-family:system-ui,-apple-system,sans-serif;margin:0;background:#fff;color:#111827}
+#nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.96);border-bottom:1px solid #E5E7EB}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:68px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(1.25rem,5vw,4rem)}
+.nav-logo{display:flex;align-items:center;gap:.75rem;flex-shrink:0}
+.nav-logo-wordmark{height:38px;width:auto;min-width:80px;display:block;object-fit:contain}
+#hero{position:relative;overflow:hidden;background:#030818;padding:6rem 0;min-height:680px;display:flex;align-items:center}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+h1.hero-h1{font-size:clamp(2.25rem,4.5vw,3.75rem);font-weight:800;line-height:1.06;letter-spacing:-.04em;color:#fff;margin-bottom:1.5rem}
+h1.hero-h1 em{font-style:normal;color:#38E747}
+</style>
 <style>
 /* ═══════════════════════════════════════════════════════
    EXTEIN ENTERPRISE — Design System
@@ -64,8 +79,8 @@
   --n950: #080C12;
 
   /* Typography */
-  --f-head: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --f-body: 'Inter', system-ui, sans-serif;
+  --f-head: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --f-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Spacing */
   --s1: .25rem;  --s2: .5rem;   --s3: .75rem;
@@ -1052,8 +1067,8 @@ footer {
   <div class="wrap">
     <div class="nav-inner">
       <a href="/" class="nav-logo" aria-label="Extein — Inicio">
-        <img src="logos/icon-transparent.png" alt="" aria-hidden="true" width="36" height="36" decoding="async">
-        <img src="logos/letras-transparent.png" alt="Extein" class="nav-logo-wordmark" width="140" height="38" decoding="async">
+        <img src="logos/icon-transparent.png" alt="" aria-hidden="true" width="36" height="36" decoding="async" fetchpriority="high">
+        <img src="logos/letras-transparent.png" alt="Extein" class="nav-logo-wordmark" width="140" height="38" decoding="async" fetchpriority="high">
       </a>
 
       <nav class="nav-links" aria-label="Principal">
@@ -1623,7 +1638,7 @@ footer {
       <div class="why-features">
         <div class="why-feat reveal">
           <div class="why-feat-icon" style="background:#CC4400;width:44px;height:44px;border-radius:var(--r-sm);flex-shrink:0;display:flex;align-items:center;justify-content:center">
-            <img src="logos/div-logo-security.png" alt="" style="width:30px;height:30px;object-fit:contain;filter:brightness(0) invert(1)">
+            <img src="logos/div-logo-security.png" alt="" style="width:30px;height:30px;object-fit:contain;filter:brightness(0) invert(1)" width="40" height="40">
           </div>
           <div>
             <h3>SLA documentado — exigible por contrato</h3>
@@ -1632,7 +1647,7 @@ footer {
         </div>
         <div class="why-feat reveal d1">
           <div class="why-feat-icon" style="background:#005F99;width:44px;height:44px;border-radius:var(--r-sm);flex-shrink:0;display:flex;align-items:center;justify-content:center">
-            <img src="logos/div-logo-it-essentials.png" alt="" style="width:30px;height:30px;object-fit:contain;filter:brightness(0) invert(1)">
+            <img src="logos/div-logo-it-essentials.png" alt="" style="width:30px;height:30px;object-fit:contain;filter:brightness(0) invert(1)" width="40" height="40">
           </div>
           <div>
             <h3>Respuesta garantizada en menos de 2 horas</h3>
@@ -1641,7 +1656,7 @@ footer {
         </div>
         <div class="why-feat reveal d2">
           <div class="why-feat-icon" style="background:#003F5C;width:44px;height:44px;border-radius:var(--r-sm);flex-shrink:0;display:flex;align-items:center;justify-content:center">
-            <img src="logos/div-logo-network.png" alt="" style="width:30px;height:30px;object-fit:contain;filter:brightness(0) invert(1)">
+            <img src="logos/div-logo-network.png" alt="" style="width:30px;height:30px;object-fit:contain;filter:brightness(0) invert(1)" width="40" height="40">
           </div>
           <div>
             <h3>Ingenieros certificados Cisco, Microsoft y Dell</h3>
@@ -1650,7 +1665,7 @@ footer {
         </div>
         <div class="why-feat reveal d3">
           <div class="why-feat-icon" style="background:#7C3AED;width:44px;height:44px;border-radius:var(--r-sm);flex-shrink:0;display:flex;align-items:center;justify-content:center">
-            <img src="logos/div-logo-software.png" alt="" style="width:30px;height:30px;object-fit:contain;filter:brightness(0) invert(1)">
+            <img src="logos/div-logo-software.png" alt="" style="width:30px;height:30px;object-fit:contain;filter:brightness(0) invert(1)" width="40" height="40">
           </div>
           <div>
             <h3>Costo fijo mensual — sin sorpresas</h3>
@@ -1885,8 +1900,8 @@ footer {
     <div class="footer-top">
       <div class="footer-brand">
         <div class="footer-logo">
-          <img src="logos/icon-transparent.png" alt="" class="fi" aria-hidden="true">
-          <img src="logos/letras-transparent.png" alt="Extein" class="fl">
+          <img src="logos/icon-transparent.png" alt="" class="fi" aria-hidden="true" width="32" height="32" loading="lazy" decoding="async">
+          <img src="logos/letras-transparent.png" alt="Extein" class="fl" width="120" height="20" loading="lazy" decoding="async">
         </div>
         <p class="footer-tagline" data-i18n="footer_tagline">MSP enterprise en Monterrey. Infraestructura tecnológica crítica para empresas que no pueden detenerse.</p>
         <p style="font-size:.72rem;color:rgba(255,255,255,.25);margin-top:.5rem;line-height:1.5">Monterrey · San Pedro · Santa Catarina · Saltillo<br>Soporte 24/7 · +52 81 2897 8162</p>
